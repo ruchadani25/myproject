@@ -1,0 +1,34 @@
+#include <iostream>
+//#include "resource.h"
+using namespace std;
+
+extern int a = 9;
+
+int main()
+{
+    cout << a;
+    int a = 10;
+    cout << ::a;
+
+    return 0;
+}
+
+op:
+99
+
+-----------------------------------------------------------------------------------------
+using namespace std;
+extern int a = 9;
+
+int main()
+{
+    cout << a;
+    
+    int a = 10;
+    cout << a;
+
+    return 0;
+}
+
+op:
+9 10
